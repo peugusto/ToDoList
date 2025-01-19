@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+}
+
+body{
+    background-color: mediumpurple;
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+#titulo{
+    text-align: center;
+    font-size:2.5rem;
+    
+}
+
+#center{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    
+}
+
+#peugusto{
+    text-align: center;
+}
+form input, form button {
+    border-radius: 32px;
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    padding-left: 28px;
+    outline: none;
+    font-family: "Poppins", serif;
+    color: mediumslateblue;
+}
+form button{
+    padding-left: 10px;
+    color: mediumslateblue;
+    background: white;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin-left: 8px;
+}
+form button:hover{
+    background: mediumslateblue;
+    color: white;
+    transition: all 0.3s;
+}
+.lista-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista-list{
+    min-width: 30%;
+    list-style: none;
+
+}
+.lista{
+    margin: 0.8rem;
+    padding-right: 09px;
+    padding-left: 0.6rem;
+    background: white;
+    color: mediumslateblue;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
+.lista li{
+ flex: 1;   
+}
+
+.lista button{
+    color: mediumslateblue;
+    background: white;
+    border: none;
+    display: flex;
+    
+}
+.trash-btn{
+    margin-left: 10px;
+    
+}
+
+.sl{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.slide{
+    transform: translateX(10rem);
+    opacity: 0;
+}
+.DONE{
+    text-decoration: line-through;
+    opacity: 0.5s;
+    opacity: 0.5;
+
+}
+select{
+    cursor: pointer;
+    color: mediumslateblue;
+    background: white;
+    padding: 1rem;
+    width: 10rem;
+    height: 3.2rem;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    outline: NONE;
+    border: none;
+}
+
+.sl::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.sl::hover::after{
+    background: mediumslateblue;
+    color: white;
+}
+
